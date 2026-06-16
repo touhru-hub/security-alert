@@ -2,7 +2,6 @@ name: 基金涨跌推送
 
 on:
   schedule:
-    # 北京时间 14:30 = UTC 06:30
     - cron: '30 6 * * 1-5'
   workflow_dispatch:
 
@@ -17,5 +16,4 @@ jobs:
       - run: pip install requests -q
       - run: python fund_monitor.py
         env:
-          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
-        working-directory: fund_monitor
+          PUSHPLUS_TOKEN: e8ab57d64b72420aa7ad6254973ef236
