@@ -17,3 +17,4 @@ jobs:
       - run: python fund_monitor.py
         env:
           PUSHPLUS_TOKEN: e8ab57d64b72420aa7ad6254973ef236
+          FUND_CODES: "014611,161903,006533,320007"
