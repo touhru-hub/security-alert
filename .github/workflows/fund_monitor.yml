@@ -1,8 +1,7 @@
 name: 基金涨跌推送
 
+# Schedule removed to suspend automatic runs. Use manual dispatch to run this workflow when needed.
 on:
-  schedule:
-    - cron: '30 6 * * 1-5'
   workflow_dispatch:
 
 jobs:
